@@ -1,0 +1,18 @@
+<head>
+  <title>meteor-account-demo</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <h1>Meteor Account packages Demo!</h1>
+  {{> loginButtons}}
+  <br />
+  {{#if currentUser}}
+	Username: {{currentUser.username}}
+  {{/if}}
+  <br />
+  <input type="button" value="UserID" />
+</template>
